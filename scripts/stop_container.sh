@@ -1,5 +1,5 @@
 set -e
 
-echo "hi"
+#!/bin/bash
 containerid=`docker ps | awk -F " " '{print $1}'`
 docker rm -f $containerid
